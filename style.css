@@ -1,0 +1,657 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 965px) {
+    .pc {
+      min-width: 912px;
+      background-color: rgba(240,235,210,.4);
+    }
+    
+    #banner {
+      margin-bottom: 20px;
+      background-image: url(images/sky.png);
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 2fr 1fr;
+      grid-gap: .3em;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+  
+    #banner h1 {
+      font-size: 60px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    }
+  
+    #banner h2 {
+      font-size: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+  
+    #menu {
+      grid-column: 2 / span 1 ;
+      grid-row: 1 / span 1;
+      margin-top: 3%;
+    }
+
+    #menu h1 {
+      float: left;
+    }
+  
+    #image {
+      grid-column: 1 / span 1 ;
+      grid-row: 1 / span 1;
+    }
+  
+    #image img {
+      float: center;
+      margin-left: 33%;
+      max-width: 65%;
+    }
+  
+    #spring {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+      margin-right: 50%;
+      margin-left: 20%;
+      display: inline-block;
+      transform: skew(30deg);
+      background-color: rgb(79, 115, 127);
+    }
+  
+    #spring h2 {
+      transform: skew(-30deg);
+      margin-left: 7%;
+      color: white;
+      padding-top: 2%;
+    }
+  
+  
+    body {
+      background-color: ivory;
+    }
+  
+    #fourcount {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: .3fr .3fr 2fr .3fr 2.7fr;
+      grid-gap: .5em;
+      padding: 0px;
+    }
+  
+  
+    #fourcount h4 {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: .09em;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 15px;
+      color: white;
+      transform: skew(-30deg);
+    }
+    
+    #good, #flying, #much, #happy {
+      margin-right: 80px;
+      margin-left: 20px;
+      display: inline-block;
+      background: rgb(49,99,10);
+      transform: skew(30deg);
+    }
+  
+    #munch img {
+      max-width: 40%;
+      margin-top: 10px;
+      margin-left: 30px;
+      display: inline-block; 
+      float: left; 
+      margin-right: 20px;
+    }
+  
+    #fly img, #happy2 img, #good2 img {
+      max-width: 30%;
+      margin-top: 10px;
+      margin-left: 30px;
+      display: inline-block; 
+      float: left; 
+      margin-right: 20px;
+    }
+  
+    #fly p, #happy2 p, #good2 p, #munch p {
+      font-family: arial;
+      font-size: 20px;
+      margin-top: 60px;
+    }
+  
+    #save {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 1;
+      margin-top: 30px;
+    }
+  
+    #save h3 {
+      font-size: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      letter-spacing: .03em;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 15px;
+    }
+    
+    #good {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+      padding: 2%;
+      margin-top: 1em;
+    }
+  
+    #good2 {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+      
+    }
+    
+    
+    #flying {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 1;
+      padding: 2%;
+      margin-top: 1em;
+    }
+    
+    #fly {
+      grid-column: 3 / span 2;
+      grid-row: 3 / span 1;
+      
+    }
+    
+    #much {
+      grid-column: 1 / span 2;
+      grid-row: 4 / span 1;
+      padding: 2%;
+      margin-top: 1em;
+    }
+  
+    #munch {
+      grid-column: 1 / span 2;
+      grid-row: 5 / span 1;
+      
+    }
+    
+    #happy {
+      grid-column: 3 / span 2;
+      grid-row: 4 / span 1;
+      padding: 2%;
+      margin-top: 1em;
+    }
+    
+    #happy2 {
+      grid-column: 3 / span 2;
+      grid-row: 5 / span 1;
+      
+    }
+    
+    #back {
+      width: 100%;
+      background-color: rgb(190, 220, 230); 
+    }
+    
+    #tasty {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: .4fr 1fr 1fr .3fr;
+      grid-gap: 1em;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+    
+    #tasty h3 {
+      font-size: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      letter-spacing: .05em;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 15px;
+    }
+  
+    #treats h3 {
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      float: left;
+    }
+    
+    #box {
+      background-color: rgb(49,99,10);
+      transform: skew(30deg);
+      float: left;
+      margin-left: 15px;
+    }
+    
+    #box h4 {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: .09em;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: white;
+      transform: skew(-30deg);
+      
+    }
+  
+    #chex img, #jack img, #gummi img, #milk img, #clif img {
+      max-width: 50%;
+      display: inline-block;
+      float: left; 
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    
+    #milk img {
+      margin-right: 30px;
+    }
+    
+    #mountain img {
+      max-width: 15%;
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+    }
+    
+    #pringle img {
+      max-width: 40%;
+      display: inline-block;
+      float: left; 
+      margin-right: 30px;
+    }
+    
+    #chex p, #jack p, #pringle p, #clif p, #gummi p, #milk p, #clif p {
+      font-family: arial;
+      font-size: 20px;
+      margin-top: 40px;
+    }
+    
+    #mountain p {
+      font-family: arial;
+      font-size: 20px;
+      margin-top: 0px;
+    }
+    
+    #treats {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 4;
+    }
+    
+    #chex {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    
+    }
+    
+    #jack {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+    }
+  
+    #pringle {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+    }
+    
+    #gummi {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+    }
+    
+    #milk {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 1;
+    }
+    
+    #clif {
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 1;
+    }
+    
+    #mountain {
+      grid-column: 1 / span 3;
+      grid-row: 4 / span 1;
+    }
+    
+    .line {
+      border-bottom: 10px solid rgb(79, 115, 127); 
+      width: 100%;
+    }
+    
+    
+    footer p{
+      width: 80%;
+      margin-left: 10%;
+      font-family: arial;
+      font-size: 20px;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+  
+  
+  }
+
+  
+
+  @media (max-width: 965px) {
+    .pc {
+      background-color: rgba(240,235,210,.4);
+    }
+
+    #banner {
+      margin-bottom: 20px;
+      background-image: url(images/sky.png);
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr; 
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-gap: .3em;
+      padding-top: 10%;
+      padding-bottom: 5%
+    }
+
+    #banner h1 {
+          font-size: 40px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+    }
+      
+    #banner h2 {
+          font-size: 25px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #image img{
+      max-width: 90%;
+      margin: auto;
+      display: grid;
+    }
+
+    #image {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      width: 90%;
+      margin: auto;
+      display: grid;
+
+    }
+
+    #menu {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    #spring {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      transform: skew(30deg);
+      background-color: rgb(79, 115, 127);
+      width: 90%;
+      margin: auto;
+    }
+
+    #spring h2 {
+      transform: skew(-30deg);
+      padding-top: 0%;
+      color: white;
+      letter-spacing: .1em;
+    }
+
+
+    #fourcount {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr; 
+      grid-template-rows: .5fr .2fr 1.2fr .2fr 1.2fr .2fr 1.2fr .2fr 1.2fr;
+      grid-gap: .5em;
+      padding: 0;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    #fourcount h3, #treats h3 {
+      font-size: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      letter-spacing: 0em;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 15px;
+      
+    }
+
+    #fourcount h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      transform: skew(-30deg);
+      letter-spacing: .08em;
+      padding-top: 1%;
+    }
+    
+    #save {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      text-align: center;
+    }
+
+    #good {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      text-align: center;
+    }
+
+    #good2 {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      text-align: center;
+    }
+
+    #flying {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 1;
+      text-align: center;
+    }
+
+    #fly {
+      grid-column: 1 / span 1;
+      grid-row: 5 / span 1;
+      text-align: center;
+    }
+
+    #much {
+      grid-column: 1 / span 1;
+      grid-row: 6 / span 1;
+      text-align: center;
+    }
+
+    #munch {
+      grid-column: 1 / span 1;
+      grid-row: 7 / span 1;
+      text-align: center;
+    }
+
+    #happy {
+      grid-column: 1 / span 1;
+      grid-row: 8 / span 1;
+      text-align: center;
+    }
+
+    #happy2 {
+      grid-column: 1 / span 1;
+      grid-row: 9 / span 1;
+      text-align: center;
+    }
+
+    #munch img {
+      max-width: 40%;
+      margin-top: 20px;
+      margin-left: 0px;  
+      margin-right: 0px;
+    }
+    
+    #fly img, #happy2 img, #good2 img {
+      max-width: 30%;
+      margin-top: 20px;
+      margin-left: 0px;;  
+      margin-right: 0px;
+    }
+
+    #good, #flying, #much, #happy {
+      margin-left: 15%;
+      margin-right: 15%;
+      padding-top: 5px;
+      background: rgb(49,99,10);
+      transform: skew(30deg);
+    }
+
+    #good2 p, #fly p, #munch p, #happy2 p {
+      font-family: arial;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    #back {
+      width: 100%;
+      padding-top: 1%;
+      background-color: rgb(190, 220, 230); 
+    }
+
+    #tasty {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr; 
+      grid-template-rows: .3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #treats {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      text-align: center;
+    }
+
+    #treats h3 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      letter-spacing: .08em;
+    }
+
+    #box {
+      background-color: rgb(49,99,10);
+      transform: skew(30deg);
+      float: left;
+      margin-left: 40%;
+      margin-right: 40%;
+      margin-top: 10px;
+
+    }
+
+    #box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      transform: skew(-30deg);
+      letter-spacing: .08em;
+      padding-top: 1%;
+    }
+
+    #chex, #jack, #pringle, #gummu, #milk, #clif, #mountain {
+      margin-bottom: 20px;
+    }
+
+    #chex p, #jack p, #pringle p, #gummi p, #milk p, #clif p, #mountain p {
+      font-family: arial;
+      font-size: 20px;
+    }
+
+    #clif img {
+      margin-top: 20px;
+    }
+
+    #chex {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      text-align: center;
+    } 
+    
+    #jack {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      text-align: center;
+    } 
+    
+    #pringle {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 1;
+      text-align: center;
+    } 
+    
+    #gummi {
+      grid-column: 1 / span 1;
+      grid-row: 5 / span 1;
+      text-align: center;
+    } 
+    
+    #milk {
+      grid-column: 1 / span 1;
+      grid-row: 6 / span 1;
+      text-align: center;
+    }
+    
+    #clif {
+      grid-column: 1 / span 1;
+      grid-row: 7 / span 1;
+      text-align: center;
+    } 
+    
+    #mountain {
+      grid-column: 1 / span 1;
+      grid-row: 8 / span 1;
+      text-align: center;
+    }
+
+    .line {
+      border-bottom: 10px solid rgb(79, 115, 127); 
+      width: 100%;
+    }
+    
+    
+    footer p{
+      width: 80%;
+      margin-left: 10%;
+      font-family: arial;
+      font-size: 20px;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+
+
+  }
+  
